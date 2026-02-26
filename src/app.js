@@ -10,4 +10,4 @@ app.use("/", (req, res) => {
 
 app.listen(3000, () => {
     console.log("Sucessfully listen to port 3000")
-});
+})
