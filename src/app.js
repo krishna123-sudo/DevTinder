@@ -8,6 +8,6 @@ app.use("/", (req, res) => {
 })
 
 
-app.listen(3000, () => {
+app.listen(7777, () => {
     console.log("Sucessfully listen to port 3000")
 })
