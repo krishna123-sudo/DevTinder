@@ -2,12 +2,19 @@ const express = require("express");
 
 const app = express();
 
-//request handler fn
-app.use("/", (req, res) => {
-    res.send("hello from the server");
+app.get("/user", (req, res) => {
+    res.send({ firstName: "krishna", lastName: "sekhar" });
+})
+
+app.post("/user", (req, res) => {
+    res.send("data Svaed sucessfully");
 })
 
 
+app.delete("/user", (req, res) => {
+    res.send("Deleted Sucessfully")
+})
+
 app.listen(7777, () => {
-    console.log("Sucessfully listen to port 3000")
+    console.log("Sucessfully listen to port 7777")
 })
