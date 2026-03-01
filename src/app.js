@@ -16,8 +16,8 @@ app.post("/signup", async (req, res) => {
         await user.save();
 
         res.send("user created sucessfully");
-    } catch (err) {
-        res.status(400).send("Error Saving the user:", err.message);
+    } catch (error) {
+        res.status(400).send("Error Saving the user:" + error.message);
     }
 
 
@@ -78,7 +78,7 @@ app.patch("/user", async (req, res) => {
     console.log(userId)
     const data = req.body;
     try {
-        await User.findByIdAndUpdate({ _id: userId }, { data }, { returnDocument: "after" })
+        await User.findByIdAndUpdate({ _id: userId }, { data }, { returnDocument: "after", runValidators: true })
         res.send("user updated sucessfully");
     } catch (err) {
         res.status(404).send("user id not find to update")

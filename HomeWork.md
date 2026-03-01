@@ -52,3 +52,8 @@
 -Explore the Mongoose Documention for Model methods
 -What are options in a Model.findOneAndUpdate method, explore more about it
 -API - Update the user with email ID
+-Add custom validation,default,required,min,max,trim,lowercase,unique
+-Add timestamp
+-Add validation for all the data in the user model
+-Explore Schematype option from the documentatioin
+-Improve the db Schema and put all the required validation 
