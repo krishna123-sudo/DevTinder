@@ -41,7 +41,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: "this is a default about of the user"
     },
-    skill: {
+    skills: {
         type: String
     }
 }, { timestamps: true, });
