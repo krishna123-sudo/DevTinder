@@ -57,3 +57,4 @@
 -Add validation for all the data in the user model
 -Explore Schematype option from the documentatioin
 -Improve the db Schema and put all the required validation 
+-Api level validation on patch and signup post api
