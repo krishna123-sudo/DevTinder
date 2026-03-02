@@ -58,3 +58,8 @@
 -Explore Schematype option from the documentatioin
 -Improve the db Schema and put all the required validation 
 -Api level validation on patch and signup post api
+
+
+-validate data in signup api
+-install bcypt package
+-create passwordHash using bcrypt.hash and save the user is exrupted password

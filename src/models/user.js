@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-        lowecase: true,
+        lowercase: true,
         trim: true
     },
     password: {
@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema({
     gender: {
         type: String,
         validate(value) {
-            if (["male", "female", "others"].includes(value)) {
+            if (!["male", "female", "others"].includes(value)) {
                 throw new Error("Gender data is not valid")
             }
         }
@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema({
         default: "this is a default about of the user"
     },
     skills: {
-        type: String
+        type: [String]
     }
 }, { timestamps: true, });
 
