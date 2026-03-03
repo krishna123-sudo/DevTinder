@@ -64,3 +64,9 @@
 -install bcypt package
 -create passwordHash using bcrypt.hash and save the user is exrupted password
 -create login api and write the logic by own---validate data,compare paswword throw error if fails
+
+-install jsonwebtoken and cookie parser
+-just send dummy to user
+- create get /profile Api and check if u get the cokkie back
+-In login api after email and password validation create the jwt token 
+-read the coookie inside the profile api and find the logged in user
