@@ -63,3 +63,4 @@
 -validate data in signup api
 -install bcypt package
 -create passwordHash using bcrypt.hash and save the user is exrupted password
+-create login api and write the logic by own---validate data,compare paswword throw error if fails
